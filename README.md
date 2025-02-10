@@ -2,7 +2,7 @@
 
 A simple and customizable login and registration component for React.
 
-For detailed documentation, check out the [Wiki](<[https](https://github.com/davem1988/custom-login-react/wiki)>).
+For detailed documentation, check out the [Wiki](https://github.com/davem1988/custom-login-react/wiki).
 
 ## Installation
 
