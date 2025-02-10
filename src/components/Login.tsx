@@ -21,10 +21,10 @@ const FormContainer = styled.div<{ bgColor?: string; textColor?: string }>`
   color: ${(props) => props.textColor || '#333'}; /* Default text color */
 `;
 
-const Title = styled.h2`
+const Title = styled.h2<{ textColor?: string }>`
   font-size: 24px;
   font-weight: 600;
-  color: #333;
+  ${(props) => props.textColor || '#333'};
   margin-bottom: 20px;
   text-align: center;
 `;
