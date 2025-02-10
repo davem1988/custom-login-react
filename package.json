@@ -32,12 +32,13 @@
     "cpx": "^1.5.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "typescript": "^5.7.3",
-    "styled-components": "^6.1.15"
+    "typescript": "^5.7.3"
   },
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "styled-components": "^6.1.15"
+  }
 }
