@@ -22,7 +22,7 @@ const FormContainer = styled.div `
 const Title = styled.h2 `
   font-size: 24px;
   font-weight: 600;
-  color: #333;
+  ${(props) => props.textColor || '#333'};
   margin-bottom: 20px;
   text-align: center;
 `;

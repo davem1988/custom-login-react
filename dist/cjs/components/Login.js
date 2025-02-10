@@ -28,7 +28,7 @@ const FormContainer = styled_components_1.default.div `
 const Title = styled_components_1.default.h2 `
   font-size: 24px;
   font-weight: 600;
-  color: #333;
+  ${(props) => props.textColor || '#333'};
   margin-bottom: 20px;
   text-align: center;
 `;
