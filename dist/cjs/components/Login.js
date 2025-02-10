@@ -14,7 +14,7 @@ const Container = styled_components_1.default.div `
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: '#f5f5f5'};
+  background-color: transparent};
 `;
 const FormContainer = styled_components_1.default.div `
   background-color: ${(props) => props.bgColor || 'white'};

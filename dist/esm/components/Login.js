@@ -8,7 +8,7 @@ const Container = styled.div `
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: '#f5f5f5'};
+  background-color: transparent};
 `;
 const FormContainer = styled.div `
   background-color: ${(props) => props.bgColor || 'white'};
