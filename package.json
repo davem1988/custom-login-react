@@ -1,6 +1,6 @@
 {
   "name": "@davem1988/custom-login-react",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "main": "dist/cjs/index.js",
   "homepage": "https://github.com/davem1988/custom-login-react",
   "module": "dist/esm/index.js",
@@ -12,7 +12,9 @@
     "build": "rimraf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs && npm run copy-css",
     "build:esm": "tsc",
     "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
-    "copy-css": "copyfiles -f src/**/*.css dist/cjs/components && copyfiles -f src/**/*.css dist/esm/components"
+    "copy-css": "copyfiles -f src/**/*.css dist/cjs/components && copyfiles -f src/**/*.css dist/esm/components",
+    "publish:github": "npm publish --registry=https://npm.pkg.github.com --access public ",
+    "publish:npm": "npm publish --access public"
   },
   "author": "Dedem1988",
   "license": "MIT",
@@ -40,9 +42,5 @@
   },
   "dependencies": {
     "styled-components": "^6.1.15"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/",
-    "name": "@davem1988/custom-login-react"
   }
 }
