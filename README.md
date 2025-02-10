@@ -5,7 +5,7 @@ A simple and customizable login and registration component for React.
 ## Installation
 
 ```sh
-npm install @davem1988/custom-login-react@1.2.8
+npm install custom-login-react
 ```
 
 or with Yarn:
