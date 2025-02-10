@@ -7,13 +7,14 @@ exports.Login = void 0;
 const jsx_runtime_1 = require("react/jsx-runtime");
 const react_1 = require("react");
 const styled_components_1 = __importDefault(require("styled-components"));
+require("./Login.css");
 // Define styled components with default values
 const Container = styled_components_1.default.div `
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: ${(props) => props.bgColor || '#f5f5f5'}; /* Default background */
+  background-color: '#f5f5f5'};
 `;
 const FormContainer = styled_components_1.default.div `
   background-color: ${(props) => props.bgColor || 'white'};
@@ -78,7 +79,7 @@ const Message = styled_components_1.default.div `
 `;
 const Login = ({ onLogin, onRegister, bgColor, textColor, btnColor, btnTextColor }) => {
     const [login, setLogin] = (0, react_1.useState)(false);
-    return ((0, jsx_runtime_1.jsx)(Container, { bgColor: bgColor, children: (0, jsx_runtime_1.jsx)(FormContainer, { bgColor: bgColor, textColor: textColor, children: login ? ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(Title, { children: "Welcome Back!" }), (0, jsx_runtime_1.jsxs)("form", { className: "login-form", onSubmit: (e) => {
+    return ((0, jsx_runtime_1.jsx)(Container, { children: (0, jsx_runtime_1.jsx)(FormContainer, { bgColor: bgColor, textColor: textColor, children: login ? ((0, jsx_runtime_1.jsxs)(jsx_runtime_1.Fragment, { children: [(0, jsx_runtime_1.jsx)(Title, { children: "Welcome Back!" }), (0, jsx_runtime_1.jsxs)("form", { className: "login-form", onSubmit: (e) => {
                             e.preventDefault();
                             onLogin(e);
                             return false;

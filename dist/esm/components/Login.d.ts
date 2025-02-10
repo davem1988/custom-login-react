@@ -1,4 +1,5 @@
 import React from 'react';
+import './Login.css';
 interface LoginProps {
     onLogin: (event: React.FormEvent<HTMLFormElement>) => void;
     onRegister: (event: React.FormEvent<HTMLFormElement>) => void;

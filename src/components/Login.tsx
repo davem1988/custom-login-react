@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import './Login.css';
 
 // Define styled components with default values
 const Container = styled.div<{ bgColor?: string }>`
@@ -7,7 +8,7 @@ const Container = styled.div<{ bgColor?: string }>`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: ${(props) => props.bgColor || '#f5f5f5'}; /* Default background */
+  background-color: '#f5f5f5'};
 `;
 
 const FormContainer = styled.div<{ bgColor?: string; textColor?: string }>`
@@ -89,7 +90,7 @@ export const Login = ({ onLogin, onRegister, bgColor, textColor, btnColor, btnTe
   const [login, setLogin] = useState(false);
 
   return (
-    <Container bgColor={bgColor}>
+    <Container>
       <FormContainer bgColor={bgColor} textColor={textColor}>
         {login ? (
           <>

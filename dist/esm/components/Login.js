@@ -1,13 +1,14 @@
 import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-runtime";
 import { useState } from 'react';
 import styled from 'styled-components';
+import './Login.css';
 // Define styled components with default values
 const Container = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: ${(props) => props.bgColor || '#f5f5f5'}; /* Default background */
+  background-color: '#f5f5f5'};
 `;
 const FormContainer = styled.div `
   background-color: ${(props) => props.bgColor || 'white'};
@@ -72,7 +73,7 @@ const Message = styled.div `
 `;
 export const Login = ({ onLogin, onRegister, bgColor, textColor, btnColor, btnTextColor }) => {
     const [login, setLogin] = useState(false);
-    return (_jsx(Container, { bgColor: bgColor, children: _jsx(FormContainer, { bgColor: bgColor, textColor: textColor, children: login ? (_jsxs(_Fragment, { children: [_jsx(Title, { children: "Welcome Back!" }), _jsxs("form", { className: "login-form", onSubmit: (e) => {
+    return (_jsx(Container, { children: _jsx(FormContainer, { bgColor: bgColor, textColor: textColor, children: login ? (_jsxs(_Fragment, { children: [_jsx(Title, { children: "Welcome Back!" }), _jsxs("form", { className: "login-form", onSubmit: (e) => {
                             e.preventDefault();
                             onLogin(e);
                             return false;
