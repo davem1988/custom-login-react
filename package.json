@@ -1,0 +1,32 @@
+{
+  "name": "custom-login-react",
+  "version": "1.0.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rimraf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs && npm run copy-css",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs",
+    "copy-css": "copyfiles -f src/**/*.css dist/cjs/components && copyfiles -f src/**/*.css dist/esm/components"
+  },
+  "author": "Dedem1988",
+  "license": "MIT",
+  "description": "A login / register component library for React",
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "cpx": "^1.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
